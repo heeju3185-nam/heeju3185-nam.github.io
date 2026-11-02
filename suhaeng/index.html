@@ -111,6 +111,7 @@
     </ol>
     <div class="group">B. 만들어 보는 길 — 클로드 프롬프트</div>
     <ol>
+      <li><a href="#b0"><span class="n">B0</span>⚡ 간단 버전 (3줄)</a></li>
       <li><a href="#b1"><span class="n">B1</span>채점 시트 만들기</a></li>
       <li><a href="#b2"><span class="n">B2</span>Gemini 채점 버튼</a></li>
       <li><a href="#b3"><span class="n">B3</span>학생 제출 웹앱</a></li>
@@ -309,6 +310,24 @@
     </section>
 
     <div class="part">B. 만들어 보는 길 — 클로드 코드에 붙여넣는 프롬프트</div>
+
+    <section class="step" id="b0">
+      <h3><span class="n">B0</span>⚡ 간단 버전 — 3줄로 시작하기</h3>
+      <p>완벽한 프롬프트를 쓰려 하지 말고, <b>3줄로 시작해서 대화하며 고치세요.</b> B1~B5는 이 3줄을 하나씩 키운 모습이에요.</p>
+      <div class="prompt"><div class="label">💬 이것만 복사하면 시작돼요</div><button class="copy">복사</button><pre>구글 시트로 수행평가 채점 도우미를 만들어 줘.
+학생은 휴대폰으로 답안지 사진을 찍어 내고, 시트에 적은 정답과 채점 기준으로
+메뉴 하나만 누르면 Gemini가 단답형·서술형 초안 점수를 매기게 해 줘.</pre></div>
+      <table>
+        <tr><th>이렇게 바꿔 보세요</th><th>예시</th></tr>
+        <tr><td>과목·문항</td><td>“[중2 과학] [광합성] 서술형 2문항으로”, “단답형만 10문항”</td></tr>
+        <tr><td>제출 방법</td><td>“사진 대신 글로도 내게”, “사진은 최대 6장까지”</td></tr>
+        <tr><td>학생 관리</td><td>“명렬표에 있는 학생만 가입”, “반별로 탭을 나눠 줘”</td></tr>
+        <tr><td>채점 방식</td><td>“비슷한 답은 🔺로 표시만”, “표현이 달라도 뜻이 맞으면 인정”</td></tr>
+        <tr><td>결과</td><td>“피드백 초안도 써 줘”, “최종 점수는 내가 적고 체크하면 학생에게 공개”</td></tr>
+      </table>
+      <div class="note">🗣️ <b>막히면</b> — “느려”, “학생이 헷갈려 해”처럼 <b>느낀 그대로</b> 말하고, 오류 창은 <b>캡처해서 붙이고</b>, 한 번에 <b>하나씩</b> 요청하세요.</div>
+      <label class="check"><input type="checkbox" data-step="b0"> 다 했어요</label>
+    </section>
 
     <section class="step" id="b1">
       <h3><span class="n">B1</span>채점 시트 만들기</h3>
